@@ -16,7 +16,7 @@ export default function Carousel() {
           id="carouselExample"
           className="carousel slide"
           data-bs-ride="carousel"
-          suppressHydrationWarning={true} // Ignore SSR mismatch
+          suppressHydrationWarning={true} // Ignore SSR mismatch 
         >
           <div className="carousel-inner">
             {/* Slides */}
@@ -27,7 +27,14 @@ export default function Carousel() {
                   <h1 className="fw-bold">50% OFF</h1>
                   <p>UP to 80 Tk</p>
                 </div>
-                <div className="image-content">{/* Image here */}</div>
+                <div className="image-content"><Image
+                                                src="/pad.svg"
+                                                alt="Carousel Image 1"
+                                                width={470}
+                                                height={300}
+                                                priority  
+                                              />
+                </div>
               </div>
             </div>
             {/* Slide 2 */}
@@ -38,7 +45,31 @@ export default function Carousel() {
                   <h1 className="fw-bold">30% OFF</h1>
                   <p>UP to 100 Tk</p>
                 </div>
-                <div className="image-content">{/* Image here */}</div>
+                <div className="image-content"><Image
+                                                src="/pad.svg"
+                                                alt="Carousel Image 1"
+                                                width={470}
+                                                height={300} 
+                                              />
+                </div>
+              </div>
+            </div>
+
+              {/* Slide 3 */}
+            <div className="carousel-item">
+              <div className="carousel-content d-flex align-items-center justify-content-between p-4">
+                <div className="text-content">
+                  <h4 className="mb-2">Special Offer on Fruits</h4>
+                  <h1 className="fw-bold">30% OFF</h1>
+                  <p>UP to 100 Tk</p>
+                </div>
+                  <div className="image-content"><Image
+                                                src="/pad.svg"
+                                                alt="Carousel Image 1"
+                                                width={470}
+                                                height={300} 
+                                              />
+                 </div>
               </div>
             </div>
           </div>
