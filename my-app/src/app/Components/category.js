@@ -25,7 +25,7 @@ export default function Category() {
                     className={`category-pill ${active === cat ? "active" : ""}`}
                     onClick={() => setActive(cat)}
                  >
-                    {cat}
+                    {cat} 
                 </button>
                 ))}
             </div>
